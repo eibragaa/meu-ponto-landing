@@ -1,0 +1,46 @@
+---
+const features = [
+  {
+    title: 'Captura inteligente',
+    description: 'Escaneie com o Document Scanner do ML Kit com recorte e correção de perspectiva, ou importe direto da galeria.',
+  },
+  {
+    title: 'OCR local e preciso',
+    description: 'Reconhecimento de texto on-device para preencher data e horários sem enviar imagens para servidores.',
+  },
+  {
+    title: 'Cálculo de horas fiel à realidade',
+    description: 'Pareamento entre comprovantes e entre dias, incluindo turnos noturnos. Resumo por período da folha e tela de Insights.',
+  },
+  {
+    title: 'Organização sem esforço',
+    description: 'Lista hierárquica por mês, dia ou semana. Busca, filtros, miniaturas e visualizador com zoom.',
+  },
+  {
+    title: 'PDF e backup seguro',
+    description: 'Exporte um ou vários comprovantes em PDF. Crie um backup .ZIP com senha opcional e restaure quando precisar.',
+  },
+  {
+    title: 'Experiência refinada',
+    description: 'Tema claro/escuro persistente, splash nativa, interface minimalista e fiel à identidade premium do Meu Ponto.',
+  },
+];
+---
+<section id="recursos" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+  <div class="mx-auto flex max-w-3xl flex-col gap-4 text-center">
+    <p class="text-sm uppercase tracking-[0.4em] text-teal-dark">Recursos</p>
+    <h2 class="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">Tudo o que você precisa. Nada que você não precisa.</h2>
+    <p class="text-lg text-ink-soft">Feito para ser rápido, discreto e confiável no dia a dia.</p>
+  </div>
+  <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {features.map((feature) => (
+      <article class="group relative overflow-hidden rounded-card border border-mist bg-white/80 p-8 shadow-[0_60px_120px_-80px_rgba(17,32,50,0.9)] transition hover:-translate-y-1 hover:border-teal/30">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-mint/40 blur-3xl transition group-hover:bg-teal/10"></div>
+        <div class="relative flex flex-col gap-3">
+          <h3 class="text-xl font-semibold text-ink">{feature.title}</h3>
+          <p class="text-base leading-relaxed text-ink-soft">{feature.description}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
