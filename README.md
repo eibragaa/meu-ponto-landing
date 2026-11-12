@@ -38,3 +38,8 @@ Cores e identidade seguem [`docs/brand-book.md`](../meu-ponto-android/docs/brand
 - Logo: `public/logo.svg`
 - Paleta: Ink, Coral, Teal, Mint, Cream, Mist
 - Tom: preciso, acolhedor, discreto e contemporâneo
+
+## TODO: Screenshots reais
+- Adicionar galeria/carrossel com prints reais do app quando disponíveis.
+- Formatos otimizados: `.webp` (prioritário) + fallback.
+- Colocar em `public/screenshots/` e integrar ao `index.astro`.
